@@ -22,7 +22,7 @@ uv sync
 
 使用 openvcv mog2 模块，粗略标注数据样本
 
-打开一号脚本 **src/1.boxcreate_lanqiu.py**
+打开一号脚本 **src/1.frame_mog2.py**
 修改输入输出目录
 
 ```python
@@ -35,14 +35,14 @@ CSV_OUTPUT_DIR = DATA_DIR
 运行脚本
 
 ```bash
-uv run python src/1.boxcreate_lanqiu.py
+uv run python src/1.frame_mog2.py
 ```
 
 ## 针对轨迹范围下标，分割样本数据
 
 针对完整视频帧分割成单条轨迹的数据样本
 
-打开一号脚本 **src/2.fenge.py**
+打开一号脚本 **src/2.frames_split.py**
 修改输入输出目录和范围
 
 ```python
@@ -59,5 +59,5 @@ range_end = 8069  # 结束帧
 运行脚本
 
 ```bash
-uv run python src/2.fenge.py
+uv run python src/2.frames_split.py
 ```
